@@ -26,6 +26,14 @@ export class OrdersCartComponent implements OnInit {
     alert("Your order has been placed")
   }
 
+  clearCart() {
+    this.cartService.clearCart;
+    this.items = this.cartService.clearCart(); 
+    this.price = this.cartService.newPrice();
+    
+    
+  }
+
   ngOnInit(): void {
     this.items = this.cartService.getItems(); 
     this.price = this.cartService.newPrice();

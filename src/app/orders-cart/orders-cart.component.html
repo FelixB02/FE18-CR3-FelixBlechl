@@ -3,9 +3,9 @@
         <div *ngIf="price > 0">
             <ul class="list-group" style="width: 100%; margin: 2vh;">
                 <li class="list-group-item" style="background-color:rgb(245, 245, 245);">
-                    <h3>Cart- {{this.numberItems}} Items</h3>
+                    <h3>Cart - {{this.numberItems}} Items</h3>
                 </li>
-                <li *ngFor="let item of items;" class="list-group-item">
+                <li *ngFor="let item of items; index as i" class="list-group-item">
                     <div style="display: grid; grid-template-columns: 1fr 3fr;">
                         <div>
                             <img height="150vh" width="200vh" src="{{item.picture}}" alt="">
@@ -51,7 +51,9 @@
                                 <h5> {{this.price + this.price * 0.1 | currency: '€'}}</h5>
                             </ng-template>
                         </div>
-                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <button (click)="clearCart()" class="btn btn-danger"> Clear Cart</button>
+                        </div>
                         <br>
                         <hr>
                         <h2 style="font-family: Great Vibes, cursive; text-align: center; font-size: 4vh;"> Order Form</h2>

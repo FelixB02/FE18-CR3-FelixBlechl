@@ -21,13 +21,14 @@ export class CartService {
   
   clearCart() {
     this.items = [];
-    return this.items;
+    this.price = 0
+    return(this.items)
   }
 
   newPrice() {
     this.price = 0
     for (let item of this.items) {
-      this.price += item.price    
+      this.price += item.price  
     }
     return this.price
   }
