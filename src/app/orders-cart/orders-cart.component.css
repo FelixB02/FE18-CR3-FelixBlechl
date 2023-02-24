@@ -6,7 +6,7 @@
 
 #group-food {
     width: 100%;
-    margin: 2vh;
+    margin: 4vh;
 }
 
 #display-food {
@@ -16,7 +16,7 @@
 
 #group-prices {
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 4vh;
 }
 
 .item {
