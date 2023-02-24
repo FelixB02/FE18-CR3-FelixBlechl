@@ -1,0 +1,33 @@
+#content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.mycard {
+    width: 55rem;
+    text-align: center;
+}
+
+.body {
+    font-size: 2vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#textfield {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.text {
+    margin: 1vh auto;
+}
+
+#buttonfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

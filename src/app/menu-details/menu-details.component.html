@@ -1,13 +1,13 @@
-<div style="display: flex; justify-content: center; padding: 2rem;">
-    <div class="card" style="width: 55rem; text-align: center;">
+<div id="content">
+    <div class="card mycard">
         <img style="height: 34rem;" src="{{food.picture}}" class="card-img-top" alt="...">
-        <div class="card-body" style="font-size: 2vh; text-align: center; display: grid; grid-template-columns: 5fr 1fr;">
-            <div style="display: flex; align-items: flex-start; flex-direction: column;">
-                <h3 style="margin: 1vh auto;" class="card-title">{{food.foodname}}</h3>
-                <p style="margin: 1vh auto;" class="card-text">Price: {{food.price | currency:'€'}}</p>
-                <p style="margin: 1vh auto;" class="card-text">{{food.description}}</p>
+        <div class="card-body body">
+            <div id="textfield">
+                <h3 class="card-title text">{{food.foodname}}</h3>
+                <p class="card-text text">Price: {{food.price | currency:'€'}}</p>
+                <p class="card-text text">{{food.description}}</p>
             </div>
-            <div style="display: flex; flex-direction: column; justify-content: center;">
+            <div id="buttonfield">
                 <button (click)="addToCart()" class="btn btn-outline-success">Put in Cart</button>
                 <button routerLink="/menu" class="btn btn-outline-danger mt-2">Back to Menu</button>
             </div>

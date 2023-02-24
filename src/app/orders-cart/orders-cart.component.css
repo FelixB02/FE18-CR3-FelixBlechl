@@ -1,0 +1,55 @@
+#contboth {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    gap: 20vh;
+}
+
+#group-food {
+    width: 100%;
+    margin: 2vh;
+}
+
+#display-food {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#group-prices {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+#clearbtn {
+    display: flex;
+    justify-content: center;
+}
+
+#orderform {
+    font-family: Great Vibes, cursive;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.input-label {
+    display: flex;
+    justify-content: end;
+    margin: 1vh 0;
+}
+
+#submitbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

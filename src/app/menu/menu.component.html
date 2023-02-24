@@ -1,23 +1,23 @@
 <div>
-    <p style="text-align:center; margin: 5vh 0; font-family: Great Vibes, cursive; font-size: 6vh;">Our Specialities</p>
+    <p id="heading">Our Specialities</p>
     <div class="container">
         <div class="row row-cols-lg-3 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
             <div *ngFor="let food of foods; index as i">
                 <div class="d-flex justify-content-center">
-                    <div class="card m-5" style="width: 18rem; height: 21rem;">
-                        <img style="height: 12rem;" src="{{food.picture}}" class="card-img-top" alt="...">
-                        <div style="text-align: center;" class="card-body">
+                    <div class="card m-5 mycard">
+                        <img src="{{food.picture}}" class="card-img-top" alt="...">
+                        <div id="cardbody" class="card-body">
                             <h5 style="margin-bottom: 3vh;" class="card-title">{{food.foodname}}</h5>
                             <hr>
                             <ng-template [ngIf]="food.availability == true" [ngIfElse]="none">
-                                <div style="display: flex; align-items: flex-start;">
+                                <div id="btncontainer">
                                     <a style="margin-right: 1vh;" routerLink="/menu/{{i}}" class="btn btn-primary">Details</a>
                                     <a (click)="test(i)" class="btn btn-success"> Order</a>
                                 </div>
                             </ng-template>
                             <ng-template #none>
                                 <div>
-                                    <p style="color: red; text-align: left;"> This product is not available!</p>
+                                    <p id="alternatetext"> This product is not available!</p>
                                 </div>
                             </ng-template>
                         </div>

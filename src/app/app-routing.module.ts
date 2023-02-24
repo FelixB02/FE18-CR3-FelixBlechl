@@ -21,6 +21,9 @@ const routes: Routes = [
   },
   {
     path: "menu/:menuId", component: MenuDetailsComponent
+  },
+  {
+    path: "**", component: HomeComponent
   }
 ];
 
