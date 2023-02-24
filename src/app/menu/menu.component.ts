@@ -14,6 +14,7 @@ export class MenuComponent {
 
   test(id: number) {
     this.cartService.addToCart(this.foods[id])
+    alert("Added to Cart")
   }
   
 

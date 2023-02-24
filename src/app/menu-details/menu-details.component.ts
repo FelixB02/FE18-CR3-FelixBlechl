@@ -17,6 +17,7 @@ export class MenuDetailsComponent implements OnInit {
 
   addToCart() {
     this.cartService.addToCart(this.food);
+    alert("Added to Cart")
   }
   
 
