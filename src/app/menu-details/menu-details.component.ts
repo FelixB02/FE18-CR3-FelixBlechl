@@ -15,12 +15,12 @@ export class MenuDetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
+  // Function to add in Cart
   addToCart() {
     this.cartService.addToCart(this.food);
-    alert("Added to Cart")
   }
   
-
+  // Getting the last number of the URL
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
      this.id = +params['menuId'];

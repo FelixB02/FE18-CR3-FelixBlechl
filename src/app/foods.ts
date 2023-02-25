@@ -1,3 +1,4 @@
+// Defining Array of Objekts for different foods
 export let foods = [
     {
         picture: "https://victaspizzaexpress.com.au/wp-content/uploads/2021/05/Inferno-pizza.jpg",

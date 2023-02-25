@@ -16,6 +16,7 @@ export class OrdersCartComponent implements OnInit {
 
   constructor(private cartService: CartService) { }
 
+  // Creating Form for ordering
   subscribeform: any = new FormGroup({
     yourname: new FormControl('', Validators.required),
     paymentmethod: new FormControl('', Validators.required),
@@ -26,6 +27,7 @@ export class OrdersCartComponent implements OnInit {
     alert("Your order has been placed")
   }
 
+  // Function to clear the cart
   clearCart() {
     this.cartService.clearCart;
     this.items = this.cartService.clearCart(); 
@@ -34,6 +36,7 @@ export class OrdersCartComponent implements OnInit {
     
   }
 
+  // On site load display all the items in cart and the prices
   ngOnInit(): void {
     this.items = this.cartService.getItems(); 
     this.price = this.cartService.newPrice();

@@ -11,10 +11,9 @@ import { CartService } from '../cart.service';
 export class MenuComponent {
   foods: Ifoods[] = foods
 
-
+  // Function for adding to Cart
   test(id: number) {
     this.cartService.addToCart(this.foods[id])
-    alert("Added to Cart")
   }
   
 

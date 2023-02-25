@@ -6,6 +6,7 @@ import { MenuDetailsComponent } from './menu-details/menu-details.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrdersCartComponent } from './orders-cart/orders-cart.component';
 
+// Adding the routing to all sites
 const routes: Routes = [
   {
     path: "", component: HomeComponent

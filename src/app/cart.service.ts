@@ -11,6 +11,8 @@ export class CartService {
 
   constructor() { }
 
+  // Functions for the Cart
+
   addToCart(foods: Ifoods) {
     this.items.push(foods);
   }
@@ -24,6 +26,8 @@ export class CartService {
     this.price = 0
     return(this.items)
   }
+
+  // Functions for price and amount calculations
 
   newPrice() {
     this.price = 0
